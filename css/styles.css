@@ -66,7 +66,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: rgba(240, 196, 85, 0.221);
+  background: linear-gradient(55deg, #ceab1c7b 0%, #1fc8db 51%, #def207 90%);
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -6075,7 +6075,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #bd5d38 !important;
+  background: linear-gradient(45deg, #7a07cd9e 0%, #2810c474 100%) !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -9996,7 +9996,7 @@ h3 {
 }
 body {
   padding-top: 3.375rem;
-  color: #6c757d;
+  color: #121415;
 }
 
 @media (min-width: 992px) {
