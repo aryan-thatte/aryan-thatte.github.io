@@ -50,7 +50,10 @@ function play() {
 }
 
 var lastName = document.getElementById("name-title")
-
 lastName.onclick = function () {
-    alert("Hey there, it worked finally lol");
+    //alert("Hey there, it worked finally lol");
+}
+
+window.onload = function () {
+
 }
