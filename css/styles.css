@@ -50,8 +50,10 @@
 html {
   font-family: sans-serif;
   line-height: 1.15;
+  /*
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  */
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -64,9 +66,72 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  /* color: #212529; */
   text-align: left;
-  background: linear-gradient(40deg, #ceab1c7b 17.5%, #1fc8db 35%, #def207 52.5%, #ceab1c7b 70%, #da2121b1 87.5%); 
+  background: linear-gradient(40deg, #ceab1c7b 17.5%, #1fc8db 35%, #def207 52.5%, #ceab1c7b 70%, #da2121b1 87.5%);
+}
+
+
+#about{
+  animation: fadeIn ease 3s;
+}
+
+#experience {
+  animation: fadeIn ease 3s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+  
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+  
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+  
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+  
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+.js-scroll-trigger {
+  animation: shrink 1.5s ease forwards;
+  opacity: 0;
+  animation-delay: 1s;
+}
+
+@keyframes shrink {
+  0% {letter-spacing: 0.75rem; opacity: 0;}
+  100% {letter-spacing: 0.05rem; opacity: 1;}
+}
+
+@-moz-keyframes shrink {
+  0% {letter-spacing: 0.25rem; opacity: 0;}
+  100% {letter-spacing: 0.05rem; opacity: 1;}
+}
+
+@-webkit-keyframes shrink {
+  0% {letter-spacing: 0.25rem; opacity: 0;}
+  100% {letter-spacing: 0.05rem; opacity: 1;}
+}
+
+@-o-keyframes shrink {
+  0% {letter-spacing: 0.25rem; opacity: 0;}
+  100% {letter-spacing: 0.05rem; opacity: 1;}
+}
+
+.none .d-lg-block {
+  animation: fadeIn;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -6084,7 +6149,7 @@ a.close.disabled {
   vertical-align: text-top !important;
 }
 
-.bg-primary {
+.bg-primary { /* nav bar background */
   background: linear-gradient(45deg, #8b21d7 0%, #1f58e8 100%) !important;
 }
 
@@ -7502,6 +7567,7 @@ button.bg-dark:focus {
 .mb-0,
 .my-0 {
   margin-bottom: 0 !important;
+  color: #000000;
 }
 
 .ml-0,
@@ -9792,7 +9858,8 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #4065c2 !important;
+  /* color: #4065c2 !important; */
+  color: #000000 !important;
 }
 
 .pronounciation {
@@ -10135,4 +10202,12 @@ section.resume-section .resume-section-content {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
+}
+
+#titleName {
+  /* text-shadow: 8px 8px 14px rgb(57, 54, 54); */
+}
+
+#A, #T {
+  font-size: 13rem;
 }
