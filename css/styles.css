@@ -63,21 +63,16 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 body {
   margin: 0;
   font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 400;
   line-height: 1.5;
   text-align: left;
+  animation: fadeIn ease 3s;
   background: linear-gradient(40deg, #ceab1c7b 17.5%, #1fc8db 35%, #def207 52.5%, #ceab1c7b 70%, #da2121b1 87.5%);
 }
 
 
-#about{
-  animation: fadeIn ease 3s;
-}
 
-#experience {
-  animation: fadeIn ease 3s;
-}
 
 @keyframes fadeIn { /* plz work */
   0% {opacity:0;}
@@ -223,7 +218,7 @@ sup {
   top: -0.5em;
 }
 
-#projectLinks {
+.hoverLinks {
   color: black;
 }
 
@@ -233,12 +228,12 @@ a {
   background-color: transparent;
 }
 
-.mb-3:hover {
-  text-decoration: none;
+.hoverLinks:hover .mb-0 {
+  color: rgb(28, 103, 169);
 }
 
-a:hover {
-  text-decoration: underline;
+.hoverLinks:hover .subheading {
+  color: rgb(28, 103, 169);
 }
 
 a:not([href]):not([class]) {
@@ -4357,8 +4352,8 @@ input[type=button].btn-block {
 .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
   color: #fff;
 }
-.navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.5);
+.navbar-dark .navbar-nav .nav-link { /* */
+  color: rgba(255, 255, 255, 0.3);
 }
 .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
   color: rgba(255, 255, 255, 0.75);
@@ -4369,8 +4364,9 @@ input[type=button].btn-block {
 .navbar-dark .navbar-nav .show > .nav-link,
 .navbar-dark .navbar-nav .active > .nav-link,
 .navbar-dark .navbar-nav .nav-link.show,
-.navbar-dark .navbar-nav .nav-link.active {
-  color: #fff;
+.navbar-dark .navbar-nav .nav-link.active { /* */
+  color: rgb(255, 255, 255);
+  ;
 }
 .navbar-dark .navbar-toggler {
   color: rgba(255, 255, 255, 0.5);
@@ -10154,6 +10150,7 @@ p.lead {
     display: block;
   }
 }
+
 .social-icons .social-icon {
   display: inline-flex;
   align-items: center;
@@ -10163,12 +10160,14 @@ p.lead {
   background-color: #495057;
   color: #fff;
   border-radius: 100%;
-  font-size: 1.5rem;
-  margin-right: 1.5rem;
+  font-size: 2rem;
+  margin-right: 3rem;
 }
+
 .social-icons .social-icon:last-child {
   margin-right: 0;
 }
+
 .social-icons .social-icon:hover {
   background-color: #bd5d38;
 }
