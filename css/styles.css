@@ -4346,6 +4346,8 @@ input[type=button].btn-block {
   color: rgba(0, 0, 0, 0.9);
 }
 
+
+
 .navbar-dark .navbar-brand {
   color: #fff;
 }
@@ -4366,7 +4368,6 @@ input[type=button].btn-block {
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .nav-link.active { /* */
   color: rgb(255, 255, 255);
-  ;
 }
 .navbar-dark .navbar-toggler {
   color: rgba(255, 255, 255, 0.5);
@@ -7684,6 +7685,7 @@ button.bg-dark:focus {
 .mb-5,
 .my-5 {
   margin-bottom: 3rem !important;
+  
 }
 
 #summaryLine {
@@ -10204,9 +10206,46 @@ section.resume-section .resume-section-content {
 }
 
 #titleName {
-  /* text-shadow: 8px 8px 14px rgb(57, 54, 54); */
+  
 }
 
 #A, #T {
   font-size: 13rem;
 }
+
+.projectImgs {
+  float: right;
+  width: auto;
+  height: 210px;
+  margin-left: 50px;
+  border-radius: 25px;
+  box-shadow: 8px 8px 20px;
+}
+
+.edImgs {
+  float: right;
+  width: auto;
+  height: 210px;
+  margin-left: 50px;
+  border-radius: 25px;
+  box-shadow: 8px 8px 20px;
+}
+
+#topBar {
+  overflow: hidden;
+  background-color: rgb(199, 199, 199);
+  /* background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 1)), to(rgba(255, 255, 255, 0))); */
+  position: fixed;
+  top: 0;
+  padding-bottom: 50px;
+  width: 100%;
+}
+
+/*
+h2 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+*/
+
