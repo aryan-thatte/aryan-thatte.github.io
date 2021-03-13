@@ -10285,10 +10285,6 @@ section.resume-section .resume-section-content {
   }
 }
 
-#titleName {
-  
-}
-
 #A, #T {
   font-size: 13rem;
 }
@@ -10306,9 +10302,23 @@ section.resume-section .resume-section-content {
   float: right;
   width: auto;
   height: 210px;
-  margin-left: 50px;
+  margin-left: 100px;
   border-radius: 25px;
   box-shadow: 8px 8px 20px black;
+}
+
+.musicImgs {
+  float: right;
+  width: auto;
+  height: 210px;
+  margin-left: 100px;
+  margin-right: 200px;
+  border-radius: 25px;
+  box-shadow: 8px 8px 20px black;
+}
+
+#dreamDescription {
+  margin-left: 30px;
 }
 
 #topBar {
