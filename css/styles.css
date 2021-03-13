@@ -10312,7 +10312,7 @@ section.resume-section .resume-section-content {
   width: auto;
   height: 210px;
   margin-left: 100px;
-  margin-right: 200px;
+  margin-right: 10%;
   border-radius: 25px;
   box-shadow: 8px 8px 20px black;
 }
