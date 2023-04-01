@@ -1,13 +1,8 @@
-import { useState } from "react";
+import { useState } from "react"
+import Home from "./containers/Home/Home"
 
 export default function App() {
-    const [count, setCount] = useState(0);
+    const [page, setCount] = useState(0)
 
-    return (
-        <>
-            <section>
-                <div onClick={() => setCount(count + 1)}>{count}</div>
-            </section>
-        </>
-    );
+    return <></>
 }
