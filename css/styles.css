@@ -13604,11 +13604,11 @@ section.resume-section .resume-section-content {
 }
 
 .experienceImg {
-    width: 90%;
+    width: 80%;
     height: 100%;
     margin-left: 50px;
     border-radius: 25px;
-    box-shadow: 8px 8px 20px;
+    box-shadow: 8px 8px 20px black;
 }
 
 .edImgs {
