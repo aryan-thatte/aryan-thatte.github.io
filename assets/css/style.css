@@ -1266,7 +1266,7 @@ section {
   color: #45505b;
   font-size: 14px;
   text-align: center;
-  padding: 30px 0;
+  padding: 10px 0;
 }
 
 #footer h3 {
@@ -1316,4 +1316,16 @@ section {
 
 #footer .credits {
   font-size: 13px;
+}
+
+#white-cover {
+  width: 140px;
+  height: 40px;
+  top: 410px;
+  left: 155px;
+  background-color: white;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
 }
