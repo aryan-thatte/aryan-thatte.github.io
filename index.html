@@ -55,7 +55,7 @@
       <p>I'm <span class="typed" data-typed-items="a Developer, an Innovator, a Creator"></span></p>
       <div class="social-links">
         <a href="assets/Aryan_Thatte_SWE_Resume.pdf" target="_blank" class="resume-button"><i class="bx bx-file"><span class="tooltiptext">Resume</span></i></a>
-        <a href="mailto:aryan.thatte@gmail.com" target="_blank" class="email-button"><i class="bx bxs-envelope"><span class="tooltiptext">Email</span></i></a>
+        <a onclick="copyEmail()" target="_blank" class="email-button"><i class="bx bxs-envelope"><span class="tooltiptext">Copy email</span></i></a>
         <a href="https://github.com/aryan-thatte" target="_blank" class="github-button"><i class="bx bxl-github"><span class="tooltiptext">Github</span></i></a>
         <a href="https://www.linkedin.com/in/aryan-thatte/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"><span class="tooltiptext">LinkedIn</span></i></a>
         <!-- <a href="https://www.instagram.com/latte_aryan" target="_blank" class="instagram"><i class="bx bxl-instagram-alt"></i></a>
@@ -96,6 +96,37 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <p id="emailToCopy" style="display: none;">aryan.thatte@gmail.com</p>
+
+  <script>
+    function copyEmail() {
+      // Create a temporary input element
+      var tempInput = document.createElement("input");
+
+      // Get the email text
+      var email = document.getElementById("emailToCopy").innerText;
+
+      // Set the value of the temporary input to the email
+      tempInput.value = email;
+
+      // Append the temporary input to the body (required for copying)
+      document.body.appendChild(tempInput);
+
+      // Select the text inside the temporary input
+      tempInput.select();
+      tempInput.setSelectionRange(0, 99999); // For mobile devices
+
+      // Copy the selected text to the clipboard
+      document.execCommand("copy");
+
+      // Remove the temporary input from the DOM
+      document.body.removeChild(tempInput);
+
+      // Show a confirmation message
+      document.getElementById("message").innerText = "Email copied to clipboard!";
+    }
+  </script>
 
 </body>
 
